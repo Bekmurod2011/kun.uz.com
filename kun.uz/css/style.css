@@ -1,0 +1,1472 @@
+/* Core styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+::selection {
+    background: black;
+    color: green;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.to-uppercase {
+    text-transform: uppercase;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+.blur-line {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+    width: 80px;
+    height: 4px;
+    background-color: rgba(237,35,159,0.6);
+    filter: blur(4px );
+    border-radius: 4px;
+}
+
+/* Main header styles */
+.main-header {
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    display: flex;
+}
+
+.main-header__brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand img {
+    width: 64px;
+}
+
+.main-navigatsion {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-navigatsion__item {
+    display: inline-block;
+}
+
+.main-navigatsion__item a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-right: 20px;
+}
+
+.main-navigatsion__item a:hover {
+    color: #003BB3;
+}
+
+.main-navigatsion__item.active a {
+    color: #efb6df;
+}
+
+.main-header__options {
+    display: inline-block;
+    margin-left: 100px;
+    vertical-align: middle;
+}
+
+.main-header__options .lang-wrapper {
+    background: #e7e7e7;
+    border-radius: 16px;
+    border: 1px solid #e7e7e7;
+}
+
+.main-header__options .lang-current {
+    padding: 6px 34px 6px 14px;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: -0.05px;
+}
+
+.main-header__options .lang-current::before {
+    background-image: url(https://kun.uz/assets/3d48c862/img/toggle-circle-v2.svg);
+    background-size: cover !important;
+    right: -2px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* News style */
+.row {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .row {
+        display: block;
+    }
+    .cards {
+        display: block;
+    }
+}
+
+.row .left-page {
+    width: 85%;
+    box-sizing: border-box;
+}
+
+.row .left-page .top-news {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+.row .left-page .top-news .img {
+    width: 50%;
+    height: 100%;
+}
+
+.row .left-page .top-news .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.row .left-page .top-news .text {
+    width: 50%;
+    padding: 25px;
+    background: #EFF2F8;
+}
+
+.row .left-page .top-news .text .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .left-page .top-news .text span:nth-child(2) {
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    font-weight: bold;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.row .left-page .top-news .text span:nth-child(3) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #000000;
+    display: block;
+}
+
+.two-div {
+    display: flex;
+}
+
+
+
+.row .left-page .top-news__small {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 30px;
+    left: 0;
+    padding-left: 0;
+}
+
+.top-news__small .img {
+    width: 50%;
+}
+
+.top-news__small .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.row .left-page .top-news__small .text {
+    padding: 5px;
+    margin-left: 10px;
+    border-bottom: 1px solid #cecece;
+}
+
+.row .left-page .top-news__small .text .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .left-page .top-news__small .text span:nth-child(2) {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.row .left-page .top-news__small .text span:nth-child(2):hover {
+    color: #003BB3;
+}
+
+
+.row .left-page .top-news__small-2 {
+    display: flex;
+    position: relative;
+    top: 50px;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 30px;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.top-news__small-2 .img {
+    width: 30%;
+}
+
+.top-news__small-2 .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.row .left-page .top-news__small-2 .text {
+    padding: 5px;
+    margin-left: 10px;
+    border-bottom: 1px solid #cecece;
+}
+
+.row .left-page .top-news__small-2 .text .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .left-page .top-news__small-2 .text span:nth-child(2) {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.row .left-page .top-news__small-2 .text span:nth-child(2):hover {
+    color: #003BB3;
+}
+
+
+
+.row .right-page {
+    position: relative;
+    margin-top: 50px;
+    width: 15%;
+    box-sizing: border-box;
+}
+
+.row .right-page .text {
+    height: 20px;
+    width: 150%;
+    padding: 20px 0;
+    margin-left: 10px;
+    padding-bottom: 65px;
+    cursor: pointer;
+    border-bottom: 1px solid #c5c5c5cc;
+}
+
+.row .right-page .text:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+
+.row .right-page .text-2 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 50px;
+}
+
+.row .right-page .text-2:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-2 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+
+.row .right-page .text-3 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 60px;
+}
+
+.row .right-page .text-4 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 80px;
+}
+
+.row .right-page .text-5 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 80px;
+}
+
+.row .right-page .text-6 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 60px;
+}
+
+.row .right-page .text-7 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 50px;
+}
+
+.row .right-page .text-8 {
+    height: 20px;
+    width: 160%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid #c5c5c5cc;
+    padding-bottom: 45px;
+}
+
+.row .right-page .text-3:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-3 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .right-page .text-4:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-4 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .right-page .text-5:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-5 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .right-page .text-6:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-6 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .right-page .text-7:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-7 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.row .right-page .text-8:hover {
+    color: #003BB3;
+}
+
+.row .right-page .text-8 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+
+.block-title {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-title a {
+    color: #17206A !important;
+    text-decoration: underline !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.block-title a:hover {
+    color: #003BB3;
+}
+
+.block-title span {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding-left: 25px;
+}
+
+.decoration {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.block-title span:before {
+    width: 10px;
+    height: 10px;
+    background: transparent !important;
+    border: 5px solid #17206a;
+    display: block;
+    text-decoration: none;
+}
+
+.block-title span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.cards {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.card-1 {
+    width: 33%;
+    margin-left: 10px;
+}
+.card-1 img {
+    width: 100%;
+}
+
+.card-1 .meta {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(https://kun.uz/assets/3d48c862/img/calendar.svg) no-repeat center left;
+    background-size: contain;
+}
+
+.card-1 a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 66px;
+    color: #000000cc;
+    font-weight: 700;
+}
+
+.card-1 a:hover {
+    color: #003BB3;
+}
+
+@media (min-width: 768px) {
+    .card-1 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+
+.right-page .btn {
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(https://kun.uz/assets/3d48c862/img/silver-arrow-right.svg) no-repeat 92% center #f0f0f0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    border-left: 2px solid #2246c5;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: 150%;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.right-page .btn:hover {
+    background-color: #eef2ff;
+}
+
+
+.block-title-2 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-title-2 a {
+    color: #17206A !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.block-title-2 a:hover {
+    color: #003BB3;
+}
+
+.block-title-2 span {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding-left: 25px;
+}
+
+.decoration {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.block-title-2 span:before {
+    width: 10px;
+    height: 10px;
+    background: transparent !important;
+    border: 5px solid #17206a;
+    display: block;
+    text-decoration: none;
+}
+
+.block-title-2 span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+
+
+.big-div {
+    display: flex;
+    width: 130%;
+}
+.big-div .page-left {
+    width: 70%;
+    margin-top: 30px;
+}
+.big-div .page-left .text a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000; 
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    display: block;
+}
+
+.big-div .page-left .text p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #000000;
+    display: block;
+}
+
+.big-div .page-left img {
+    width: 100%;
+}
+
+
+.big-div .page-right {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.big-div .page-right .two-card {
+    width: 100%;
+    display: flex;
+}
+
+.big-div .page-right .two-card .card-1 {
+    width: 50%;
+}
+
+.big-div .page-right .two-card .card-1 img {
+    width: 100%;
+    height: 70%;
+}
+
+.big-div .page-right .two-card .card-1 a {
+    width: 100%;
+    font-size: 15px;
+    line-height: 22px;
+    min-height: 66px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+.big-div .page-right .two-card-2 {
+    width: 100%;
+    display: flex;
+}
+
+.big-div .page-right .two-card-2 .card-1 {
+    width: 50%;
+}
+
+.big-div .page-right .two-card-2 .card-1 img {
+    width: 100%;
+    height: 70%;
+}
+
+.big-div .page-right .two-card-2 .card-1 a {
+    width: 100%;
+    font-size: 15px;
+    line-height: 22px;
+    min-height: 66px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Interview styles */
+.interview {
+    background: #f0f0f0;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+.interview .container {
+    max-width: 1400px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.block-title a {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #2246c5 !important;
+    text-decoration: none !important;
+}
+
+.interview-body {
+    margin-top: 50px;
+}
+.tm-row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tm-row .card-1 {
+    width: 25%;
+    -webkit-box-flex: 0;
+    flex: 0 0 25%;
+    padding: 0 7.5px;
+}
+
+.interview-post:nth-last-child(1),
+.interview-post:nth-last-child(2),
+.interview-post:nth-last-child(3),
+.interview-post:nth-last-child(4) {
+    margin-bottom: 0;
+}
+
+.interview-post {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 25px;
+}
+
+a.white-bg {
+    display: block;
+}
+
+.white-bg {
+    background: #fff !important;
+}
+
+.interview-post a {
+    height: 100%;
+}
+
+.interview-post .ip-head {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 55px;
+}
+
+.interview-post .ip-head .interview-post {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: calc(5% / 8 * 100);
+}
+
+.interview-post .ip-head .interview-post img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.interview-post .ip-head .post-thumbnail:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 100%;
+    height: 100%;
+    background: #0d1b8c !important;
+    z-index: -1;
+}
+
+.interview-post .ip-head .block-word {
+    font-size: 28px;
+    color: #e3e3e3;
+    font-weight: 700;
+    position: absolute;
+    right: -56px;
+    height: 35px;
+    width: 160px;
+    top: 86px;
+    transform: rotate(-90deg);
+    display: block;
+}
+
+.interview-post .ip-body {
+    padding-top: 255px;
+}
+
+.interview-post .ip-body .post-title {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+
+/* Styles */
+.two-page {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.two-page .first-page {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px)
+ {
+    .first-page{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+}
+
+.inquiry-post {
+    padding-top: 60px;
+}
+
+.inquiry-post .post-box {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding-right: 10px;
+}
+
+.post-box .post-thumb {
+    width: 95%;
+    height: 100%;
+    position: relative !important;
+    transform: translateY(-30px);
+    z-index: 1;
+}
+
+.post-box .post-thumb:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.post-body {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.post-body .h4 {
+    padding: 25px;
+    padding-top: 0px;
+    padding-right: 0;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.post-body:hover {
+    color: #003bb3 !important;
+}
+
+.small-post {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.small-post .d-flex {
+    display: flex;
+}
+
+.small-post .d-flex .sm-thumbnail {
+    width: 170px;
+    height: 110px;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.small-post .d-flex .sm-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-post .post-title {
+    padding: 8px 20px 0 20px;
+    cursor: pointer;
+}
+
+.small-post .post-title:hover {
+    color: #003bb3 !important;
+}
+
+.small-post .post-title h4 {
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+/* Maqolalar styles */
+.rows {
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rows .card {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 31.7%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.card div.news {
+    width: 100%;
+    position: relative;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rows .card .news-img {
+    padding-bottom: calc(5% / 8 * 100);
+    overflow: hidden;
+    margin-bottom: 15px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-img img {
+    display: block;
+    transition: 1s ease;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100%;
+}
+
+.card .news a.news__title {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.description {
+    display: inline-block;
+}
+
+.card .news .description {
+    padding-top: 10px;
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-top: 20px;
+    word-spacing: 30px;
+}
+
+
+.block-title-3 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-title-3 a {
+    color: #2246c5 !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.block-title-3 a:hover {
+    color: #003BB3;
+}
+
+.block-title-3 span {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    text-decoration: none !important;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+a.flex {
+    text-decoration: none !important;
+}
+
+
+/* Biznes hamkorlik */
+.business-block__slider {
+    width: 100%;
+    padding: 35px 0;
+    background: #f0f0f0;
+    position: relative;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1400px;
+    }
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swipper-wrapper {
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swipper-slide {
+    width: 439.333px;
+    margin-right: 26px;
+    height: auto;
+    position: relative;
+}
+
+.swipper-slide .news-business {
+    height: 100%;
+    border: none;
+    background: #fff;
+}
+
+.news-business__img-wrapper {
+    display: block;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.news-business__img-wrapper .news-business__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-business__title {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px;
+    font-weight: 700;
+    display: block;
+}
+
+/* Video Yangiliklar */
+.roww {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px) {
+    .roww {
+        max-width: 1400px;
+    }
+}
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-news-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 48.5%;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.top-gallery {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: calc(5% / 8 * 100);
+    display: block;
+    margin-top: 20px;
+}
+
+.top-gallery::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: linear-gradient(180deg, transparent, #000);
+    z-index: 10;
+}
+
+.top-gallery__img {
+    background-image: url(https://storage.kun.uz/source/thumbnails/_medium/10/rYTAMAjswW1WIMUCudbAH3Kxd6GkCAzC_medium.jpg);
+    transition: 1s ease;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top-gallery__play-icon {
+    background: url(https://kun.uz/assets/99110d40/img/play-video-v3.svg) no-repeat center center;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 11;
+}
+
+.top-gallery__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: -.2px;
+    padding: 20px 5px;
+    display: block;
+    line-height: 29px;
+}
+
+.rowss {
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+.rowss .card-1 {
+    flex: 0 0 48.5%;
+    max-width: 51%;
+}
+}
+
+.gallery-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gallery-item__img {
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(5% / 8 * 100);
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image {
+    background-image: url(https://storage.kun.uz/source/thumbnails/_medium/10/yCHerTtCUgRLc3VUoaqwTvZrLdDZXemz_medium.jpg);
+    object-fit: cover;
+}
+
+
+.gallery-item__img .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+/* Footer */
+.page-footer {
+    margin-top: 20px;
+}
+
+.page-footer__bottom {
+    background: #131927;
+    color: #fff;
+}
+
+.page-footer__bottom .footer-menu {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 20px;
+}
+
+.page-footer__bottom .footer-menu__item {
+    margin-right: 50px;
+}
+
+.page-footer__bottom .footer-menu__item {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.page-footer__bottom .footer-menu__item:hover {
+    text-decoration: underline !important;
+}
+
+.footer-menu__list {
+    background: #1c2680;
+}
+
+.space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reset-list {
+    margin: 0;
+}
+
+.reset-list li {
+    list-style: none;
+}
+
+.footer-bottom {
+    padding: 25px 0;
+    background-color: #17206a;
+}
+
+.page-footer__bottom .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom .footer-text {
+    font-size: 13px;
+    letter-spacing: -0.05px;
+    max-width: 1000px;
+    line-height: 18px;
+    padding-right: 30px;
+}
+
+.footer-bottom .social-items {
+    display: flex;
+    align-items: center;
+}
+
+.social-items .social-item a {
+    padding: 7px;
+    margin-left: 10px;
+}
+
+.social-items .social-item {
+    transition: .3s;
+}
+
+.social-items .social-item:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+.social-items .social-item a img {
+    height: 18px;
+    max-width: 28px;
+    object-fit: contain;
+}
+
+.cd-top.cd-top--fade-out {
+    opacity: 0.5;
+}
+
+.cd-top.cd-top--show {
+    visibility: visible;
+}
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px #0000000d;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: #2c59aa url(https://kun.uz/assets/99110d40/img/cd-top-arrow.svg) no-repeat center 50%;
+    z-index: 50;
+}
+
+.cd-top:hover {
+    background: #2c59aa;
+    opacity: 1;
+}
+
+.cd-top.cd-top--show, .cd-top.cd-top--fade-out, .cd-top:hover {
+    transition: opacity 0.3s 0s, visibility 0s 0s, background-color 0.3s 0s;
+}
+
